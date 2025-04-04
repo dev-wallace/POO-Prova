@@ -10,7 +10,7 @@ public class ConnectionFactory {
 	public static Connection getConexao() throws SQLException {
 		if (conexao == null) {
 			conexao = DriverManager.getConnection
-					("jdbc:mysql://localhost:3306/livraria","root","");
+					("jdbc:mysql://localhost:3306/tarefas_db","root","root");
 		}
 		return conexao;
 	}
