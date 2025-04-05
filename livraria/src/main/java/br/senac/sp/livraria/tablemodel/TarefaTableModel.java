@@ -32,7 +32,7 @@ public class TarefaTableModel extends AbstractTableModel {
             case 1: return tarefa.getNome();
             case 2: return tarefa.getDescricao();
             case 3: return tarefa.getStatus().toString();
-            case 4: return tarefa.getFuncionarioId(); // Você pode melhorar para mostrar o nome do funcionário
+            case 4: return tarefa.getNome() + " " + tarefa.getId();
             default: return null;
         }
     }

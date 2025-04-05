@@ -49,4 +49,8 @@ public class Funcionario {
     public void setDepartamentoId(int departamentoId) {
         this.departamentoId = departamentoId;
     }
+    @Override
+    public String toString() {
+        return nome; // Mostrará apenas o nome
+    }
 }

@@ -32,7 +32,7 @@ public class FuncionarioTableModel extends AbstractTableModel {
             case 1: return funcionario.getNome();
             case 2: return String.format("R$ %.2f", funcionario.getSalario());
             case 3: return funcionario.getNivel().toString();
-            case 4: return funcionario.getDepartamentoId(); // Você pode melhorar para mostrar o nome do departamento
+            case 4: return funcionario.getNome() + " " + funcionario.getId(); 
             default: return null;
         }
     }

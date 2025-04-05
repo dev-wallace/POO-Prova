@@ -1,12 +1,12 @@
 package br.senac.sp.livraria.view;
 
 import java.awt.*;
-import java.awt.event.*;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.*;
-import javax.swing.table.*;
+
 import br.senac.sp.livraria.dao.*;
 import br.senac.sp.livraria.enumeration.*;
 import br.senac.sp.livraria.model.*;
@@ -599,7 +599,7 @@ public class ViewFuncionario extends JFrame {
     
     private void atualizarComboDepartamentos() throws SQLException {
         DefaultComboBoxModel<Departamento> model = new DefaultComboBoxModel<>();
-        model.addElement(null); // Permite selecionar nenhum departamento
+        model.addElement(null); 
         for (Departamento d : departamentos) {
             model.addElement(d);
         }
